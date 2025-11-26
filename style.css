@@ -117,7 +117,7 @@ body.ssbu {
   }
 }
 
-*/ Medium screens (tablets) */
+/* Medium screens (tablets) */
 @media (min-width: 768px){
   body.index{
     width: 80%;
