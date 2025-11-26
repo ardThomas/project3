@@ -103,6 +103,9 @@ body.ssbu {
   right: 10px !important;
   bottom: 50px !important;
 }
+#map img {
+  border-radius: 0 !important;
+}
 
 
 /* ============================== Code for mobile interfaces ============================== */
