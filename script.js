@@ -24,3 +24,13 @@ function InitMap(){
 
   /* 3rd Feature: */
 
+
+  /* "Questions?" button */
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("questionButton");
+    if(btn){
+      btn.addEventListener("click", () => {
+        alert("If you have questions, contact me at:\n<tard@hawk.illinoistech.edu>");
+      });
+    }
+  });
