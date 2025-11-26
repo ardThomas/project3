@@ -12,4 +12,15 @@ function InitMap(){
     ]
   });
 
-  
+  /* 1st Feature: Custom marker */
+  new google.maps.Marker({
+    position: centerPos,
+    map: map,
+    title: "Welcome! This is my map."
+  });
+
+  /* 2nd Feature: Zoom controls */
+  map.setOptions({zoomControl: true});
+
+  /* 3rd Feature: */
+
