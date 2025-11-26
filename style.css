@@ -1,0 +1,97 @@
+/* Import a font from Google Docs (Quicksand) */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+/* Apply global styles */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f8f9fa;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #333;
+  padding: 1rem 0;
+}
+
+nav ul {
+  list-style: none; /* Removes bullets from nav list */
+  display: flex;
+  justify-content: center; /* Centers nav horizontally */
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f4f4f4;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd43b;
+}
+
+/* Headings */
+h1, h2, h3 {
+  text-align: center;
+  font-family: Verdana, Geneva, sans-serif; /* Browser-native font */
+  margin-top: 1.5rem;
+}
+
+/* Paragraphs */
+p {
+  width: 80%;
+  margin: 1rem auto;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Images */
+img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+/* Fixed width layout for resume page */
+body.resume {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 0.1rem solid #ccc;
+  padding: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+/* Fluid layout for index and ssbu pages */
+body.index,
+body.ssbu {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Styling for video on ssbu.html */
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+}
+
+.video-container iframe {
+  max-width: 100%;
+  border: none;
+}
