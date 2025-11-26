@@ -1,44 +1,38 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 
 <head>
-  <meta charset = "UTF-8">
+  <meta charset="UTF-8">
   <title>Map Page</title>
-  <link rel = "stylesheet" href = "style.css">
-  <script src = "script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
   
-<body class = "map">
+<body class="map">
   <header>
     <nav>
       <ul>
-        <li><a href = "index.html">Homepage</a></li>
-        <li><a href = "resume.html">Resume</a></li>
-        <li><a href = "ssbu.html">My Favorite Hobby</a></li>
-        <li><a href = "googlemaps.html">Map Page</a></li>
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="ssbu.html">My Favorite Hobby</a></li>
+        <li><a href="googlemaps.html">Map Page</a></li>
       </ul>
     </nav>
   </header>
 
   <h1>My Google Map</h1>
 
-  <div id = "map" style = "width: 90%; height: 400px; margin: 2rem auto; border-radius: 1rem;"></div>
-  <div style = "text-align:center;">
-    <button id = "questionButton">Questions?</button>
+  <div id="map" style="width: 90%; height: 400px; margin: 2rem auto; border-radius: 1rem;"></div>
+
+  <div style="text-align:center;">
+    <button id="questionButton">Questions?</button>
   </div>
 
-  <script>
-    function initMap() {
-      var mapProp= {
-        center:new google.maps.LatLng(51.508742,-0.120850),
-        zoom:5,
-      };
-      var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-    }
-  </script>
-  
+  <!-- Load Google Maps API last -->
   <script 
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap" 
+    async 
+    defer>
   </script>
 
 </body>
