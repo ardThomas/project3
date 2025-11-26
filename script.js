@@ -1,5 +1,5 @@
 /* Initialize the google map */
-function InitMap(){
+function initMap(){
   const centerPos = {lat: 41.835, lng: -87.627}; //Coordinates for IIT
 
   const map = new google.maps.Map(document.getElementById("map"), {
