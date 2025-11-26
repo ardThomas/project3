@@ -96,6 +96,14 @@ body.ssbu {
   border: none;
 }
 
+/* Align zoom control buttons on the google maps page */
+#map .gmnoprint,
+#map .gm-control-active {
+  margin: 0 !important;
+  right: 10px !important;
+  bottom: 50px !important;
+}
+
 
 /* ============================== Code for mobile interfaces ============================== */
 
