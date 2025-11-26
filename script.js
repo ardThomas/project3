@@ -22,16 +22,24 @@ function InitMap(){
   /* 2nd Feature: Zoom controls */
   map.setOptions({zoomControl: true});
 
-  /* 3rd Feature: */
-
-
-  /* "Questions?" button */
-  document.addEventListener("DOMContentLoaded", () => {
-    const btn = document.getElementById("questionButton");
-    if(btn){
-      btn.addEventListener("click", () => {
-        alert("If you have questions, contact me at:\n<tard@hawk.illinoistech.edu>");
-      });
-    }
+  /* 3rd Feature: Circle that highlights 500 M radius around IIT */
+  new google.maps.Circle({
+    strokeColor: "#FF0000",
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    fillOpacity: 0.15,
+    center: centerPos,
+    radius: 500,
+    map: map
   });
+}
+
+/* "Questions?" button */
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("questionButton");
+  if(btn){
+    btn.addEventListener("click", () => {
+      alert("If you have questions, contact me at:\n<tard@hawk.illinoistech.edu>");
+    });
+  }
 });
